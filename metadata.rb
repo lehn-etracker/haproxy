@@ -13,8 +13,8 @@ recipe "haproxy::app_lb", "Installs and configures haproxy by searching for node
   supports os
 end
 
-depends           "cpu", ">= 0.2.0"
-depends           "build-essential"
+recommends        "cpu", ">= 0.2.0"
+recommends        "build-essential"
 
 attribute "haproxy/incoming_address",
   :display_name => "HAProxy incoming address",
